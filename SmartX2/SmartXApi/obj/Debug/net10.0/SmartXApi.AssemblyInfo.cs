@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartXApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8070321a9e2ffea165610084bd79c9ab08953a14")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b40170b84f296b05ad03e1016b548b0510320ce3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartXApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartXApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
