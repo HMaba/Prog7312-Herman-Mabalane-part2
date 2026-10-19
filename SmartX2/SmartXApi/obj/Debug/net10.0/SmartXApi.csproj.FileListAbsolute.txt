@@ -1,0 +1,9 @@
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.csproj.AssemblyReference.cache
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.AssemblyInfoInputs.cache
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.AssemblyInfo.cs
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.csproj.CoreCompileInputs.cache
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartXApi\obj\Debug\net10.0\SmartXApi.sourcelink.json

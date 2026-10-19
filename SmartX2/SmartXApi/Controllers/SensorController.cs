@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SmartAPI.Models;
-using SmartAPI.Services;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using SmartXApi.Models;
+using SmartXApi.Services;
 
-namespace SmartAPI.Controllers
+namespace SmartXApi.Controllers
 {
 
     [ApiController]
+    [Authorize]
     [Route("api/sensors")]
     public class SensorsController : ControllerBase
     {

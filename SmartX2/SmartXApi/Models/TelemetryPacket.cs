@@ -1,6 +1,7 @@
-﻿using System.Text.Json;
+﻿using SmartXApi.Models;
+using System.Text.Json;
 
-namespace SmartAPI.Models
+namespace SmartXApi.Models
 {
 
     public abstract class TelemetryPacketBase
@@ -8,10 +9,12 @@ namespace SmartAPI.Models
         public int DeviceId { get; set; }
         public int SensorId { get; set; }
         public DateTime Timestamp { get; set; } = DateTime.UtcNow;
+
         public abstract object GetValue();
 
         public abstract TelemetryValueType ValueType { get; }
     }
+
     public class TelemetryPacket<T> : TelemetryPacketBase
     {
         public T Value { get; set; } = default!;
@@ -29,7 +32,7 @@ namespace SmartAPI.Models
         public override string ToString() => $"[Device {DeviceId} / Sensor {SensorId}] {Value} @ {Timestamp:O}";
     }
 
-        public class TelemetryRecord
+    public class TelemetryRecord
     {
         public int Id { get; set; }
         public int DeviceId { get; set; }

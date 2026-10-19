@@ -1,9 +1,8 @@
-﻿using SmartAPI.Data;
-using SmartAPI.Models;
+﻿using SmartXApi.Data;
+using SmartXApi.Models;
 
-namespace SmartAPI.Data
+namespace SmartXApi.Data
 {
-
     public static class DataSeeder
     {
         public static void Seed(SmartXDbContext context)

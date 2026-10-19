@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SmartAPI.Models;
-using SmartAPI.Services;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using SmartXApi.Models;
+using SmartXApi.Security;
+using SmartXApi.Services;
 
-namespace SmartAPI.Controllers
+namespace SmartXApi.Controllers
 {
-
     [ApiController]
     [Route("api/telemetry")]
     public class TelemetryController : ControllerBase
@@ -13,53 +14,24 @@ namespace SmartAPI.Controllers
 
         public TelemetryController(ITelemetryService telemetryService) => _telemetryService = telemetryService;
 
-        /// <summary>
-        /// Receives a telemetry reading. The submission's ValueType determines which
-        /// concrete TelemetryPacket&lt;T&gt; is constructed and validated/processed.
-        /// </summary>
         [HttpPost]
+        [Authorize(Policy = DeviceKeyDefaults.IngestPolicy)]
         public async Task<ActionResult<TelemetryResult>> Post(TelemetrySubmission submission)
         {
-            TelemetryPacketBase packet = submission.ValueType switch
+            if (!TelemetryPacketFactory.TryCreate(submission, out var packet, out var error) || packet is null)
             {
-                TelemetryValueType.Float => new TelemetryPacket<float>
-                {
-                    DeviceId = submission.DeviceId,
-                    SensorId = submission.SensorId,
-                    Timestamp = submission.Timestamp ?? DateTime.UtcNow,
-                    Value = float.Parse(submission.Value)
-                },
-                TelemetryValueType.Int => new TelemetryPacket<int>
-                {
-                    DeviceId = submission.DeviceId,
-                    SensorId = submission.SensorId,
-                    Timestamp = submission.Timestamp ?? DateTime.UtcNow,
-                    Value = int.Parse(submission.Value)
-                },
-                TelemetryValueType.Bool => new TelemetryPacket<bool>
-                {
-                    DeviceId = submission.DeviceId,
-                    SensorId = submission.SensorId,
-                    Timestamp = submission.Timestamp ?? DateTime.UtcNow,
-                    Value = bool.Parse(submission.Value)
-                },
-                _ => new TelemetryPacket<string>
-                {
-                    DeviceId = submission.DeviceId,
-                    SensorId = submission.SensorId,
-                    Timestamp = submission.Timestamp ?? DateTime.UtcNow,
-                    Value = submission.Value
-                }
-            };
+                return BadRequest(new TelemetryResult { IsValid = false, Message = error });
+            }
 
             var result = await _telemetryService.ReceiveAsync(packet);
             return result.IsValid ? Ok(result) : BadRequest(result);
         }
 
         [HttpGet("history")]
+        [Authorize]
         public async Task<ActionResult<List<object>>> GetHistory([FromQuery] int deviceId, [FromQuery] int? sensorId, [FromQuery] int take = 100)
         {
-            var history = await _telemetryService.GetHistoryAsync(deviceId, sensorId, take);
+            var history = await _telemetryService.GetHistoryAsync(deviceId, sensorId, Math.Clamp(take, 1, 1000));
             return Ok(history.Select(p => new
             {
                 p.DeviceId,
@@ -71,6 +43,7 @@ namespace SmartAPI.Controllers
         }
 
         [HttpGet("latest")]
+        [Authorize]
         public async Task<ActionResult> GetLatest([FromQuery] int deviceId, [FromQuery] int sensorId)
         {
             var latest = await _telemetryService.GetLatestAsync(deviceId, sensorId);
@@ -90,6 +63,7 @@ namespace SmartAPI.Controllers
         }
 
         [HttpGet("power/{deviceId:int}")]
+        [Authorize]
         public async Task<ActionResult<PowerReading>> GetAggregatePower(int deviceId)
         {
             var total = await _telemetryService.GetAggregatePowerAsync(deviceId);

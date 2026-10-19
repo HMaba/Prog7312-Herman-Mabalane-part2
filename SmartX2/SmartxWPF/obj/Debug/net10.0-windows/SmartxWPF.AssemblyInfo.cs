@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartxWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40c67443dda8abaa996a76b9a2c8111c38ba76cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0933110bd397654c5a7fbd8386e4b0af8a7f9c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartxWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartxWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

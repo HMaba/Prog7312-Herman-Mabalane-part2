@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SmartAPI.Models
+namespace SmartXApi.Models
 {
     public enum DeploymentNodeType
     {

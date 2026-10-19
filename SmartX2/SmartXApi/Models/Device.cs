@@ -1,12 +1,12 @@
-﻿using SmartAPI.Models;
+﻿
 
-namespace SmartAPI.Models
+namespace SmartXApi.Models
 {
 
-   
     public class Device
     {
         public int Id { get; set; }
+
         public string DeviceIdentifier { get; set; } = string.Empty;
 
         public string MacAddress { get; set; } = string.Empty;

@@ -1,101 +1,182 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SmartAPI.Structures;
+﻿using System.Security.Claims;
+using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using SmartXApi.Models;
+using SmartXApi.Security;
+using SmartXApi.Services;
 
-namespace SmartAPI.Controllers;
-
-[ApiController]
-[Route("api/command-stream")]
-public sealed class CommandStreamController(CommandStreamStore store) : ControllerBase
+namespace SmartXApi.Controllers
 {
-    [HttpGet("devices")]
-    public IActionResult GetDevices() => Ok(store.GetDevices());
-
-    [HttpPost("devices")]
-    public IActionResult RegisterDevice([FromBody] RegisteredDeviceRecord device)
+    [ApiController]
+    [Authorize]
+    [Route("api/command-stream")]
+    public class CommandStreamController : ControllerBase
     {
-        if (string.IsNullOrWhiteSpace(device.NodeId) || string.IsNullOrWhiteSpace(device.Name) || string.IsNullOrWhiteSpace(device.Category))
-            return BadRequest("NodeId, Name and Category are required.");
-        return Ok(store.RegisterDevice(device));
-    }
+        private const int MaxBatchSize = 500;
 
-    [HttpPost("devices/upload")]
-    [RequestSizeLimit(1_000_000)]
-    public async Task<IActionResult> UploadDevices(IFormFile file, CancellationToken cancellationToken)
-    {
-        if (file is null || file.Length == 0) return BadRequest("Choose a non-empty .txt file.");
-        if (!Path.GetExtension(file.FileName).Equals(".txt", StringComparison.OrdinalIgnoreCase)) return BadRequest("Only .txt files are accepted.");
-        var imported = new List<RegisteredDeviceRecord>();
-        var errors = new List<string>();
-        using var reader = new StreamReader(file.OpenReadStream());
-        var lineNumber = 0;
-        while (await reader.ReadLineAsync(cancellationToken) is { } line)
+        private readonly ITelemetryStreamProcessor _processor;
+        private readonly ICommandStreamService _commands;
+        private readonly ITelemetryService _telemetry;
+        private readonly JsonSerializerOptions _jsonOptions;
+
+        public CommandStreamController(
+            ITelemetryStreamProcessor processor,
+            ICommandStreamService commands,
+            ITelemetryService telemetry,
+            IOptions<Microsoft.AspNetCore.Mvc.JsonOptions> jsonOptions)
         {
-            lineNumber++;
-            if (string.IsNullOrWhiteSpace(line) || line.TrimStart().StartsWith('#')) continue;
-            var parts = line.Split('|', 3, StringSplitOptions.TrimEntries);
-            if (parts.Length != 3 || parts.Any(string.IsNullOrWhiteSpace)) { errors.Add($"Line {lineNumber}: expected NodeId|Name|Category."); continue; }
-            imported.Add(store.RegisterDevice(new RegisteredDeviceRecord { NodeId = parts[0], Name = parts[1], Category = parts[2], IsOnline = true }));
+            _processor = processor;
+            _commands = commands;
+            _telemetry = telemetry;
+            _jsonOptions = jsonOptions.Value.JsonSerializerOptions;
         }
-        return Ok(new { ImportedCount = imported.Count, Devices = imported, Errors = errors });
-    }
 
-    [HttpPost("telemetry")]
-    public IActionResult ReceiveTelemetry([FromBody] TelemetryPacketRecord packet)
-    {
-        if (string.IsNullOrWhiteSpace(packet.DeviceId) || string.IsNullOrWhiteSpace(packet.SensorId)) return BadRequest("DeviceId and SensorId are required.");
-        try
+        [HttpGet("dashboard")]
+        public ActionResult<DashboardSnapshot> GetDashboard() => Ok(_processor.GetDashboard(OperatorName()));
+
+        [HttpGet("live")]
+        public async Task Live(CancellationToken cancellationToken)
         {
-            store.AddTelemetry(packet);
-            lock (store.SyncRoot)
+            Response.Headers.ContentType = "text/event-stream";
+            Response.Headers.CacheControl = "no-cache";
+            Response.Headers["X-Accel-Buffering"] = "no";
+
+            var user = OperatorName();
+            var lastVersion = -1L;
+            var lastSent = DateTime.MinValue;
+
+            try
             {
-                if (store.CriticalAlertQueue.TryDequeue(out var critical, out _))
-                    return Accepted(new { Status = "Critical alert prioritized", Packet = packet, CriticalAlert = critical });
+                while (!cancellationToken.IsCancellationRequested)
+                {
+                    var version = _processor.CurrentVersion;
+                    if (version != lastVersion || DateTime.UtcNow - lastSent > TimeSpan.FromSeconds(5))
+                    {
+                        var snapshot = _processor.GetDashboard(user);
+                        var json = JsonSerializer.Serialize(snapshot, _jsonOptions);
+
+                        await Response.WriteAsync($"event: snapshot\ndata: {json}\n\n", cancellationToken);
+                        await Response.Body.FlushAsync(cancellationToken);
+
+                        lastVersion = version;
+                        lastSent = DateTime.UtcNow;
+                    }
+
+                    await Task.Delay(500, cancellationToken);
+                }
             }
-            return Accepted(new { Status = "Telemetry queued", Packet = packet });
+            catch (OperationCanceledException)
+            {
+            }
         }
-        catch (KeyNotFoundException ex) { return BadRequest(ex.Message); }
+
+        [HttpGet("devices")]
+        public ActionResult<List<DeviceSnapshot>> GetDevices([FromQuery] DeviceFilter filter) =>
+            Ok(_processor.FilterDevices(filter));
+
+        [HttpPost("devices/search")]
+        public ActionResult<List<DeviceSnapshot>> Search([FromBody] DeviceFilter filter) =>
+            Ok(_commands.Search(filter, OperatorName()));
+
+        [HttpGet("devices/{deviceId:int}")]
+        public ActionResult<DeviceSnapshot> GetDevice(int deviceId)
+        {
+            var device = _processor.GetDevice(deviceId);
+            return device is null ? NotFound() : Ok(device);
+        }
+
+        [HttpGet("timeline")]
+        public ActionResult<List<SensorTimelineEntry>> GetTimeline([FromQuery] int deviceId, [FromQuery] int sensorId, [FromQuery] int take = 100) =>
+            Ok(_processor.GetTimeline(deviceId, sensorId, take));
+
+        [HttpGet("alerts")]
+        public ActionResult<List<StreamAlert>> GetAlerts([FromQuery] int take = 50) =>
+            Ok(_processor.GetRecentAlerts(take));
+
+        [HttpGet("insights")]
+        public ActionResult<InsightsResponse> GetInsights() => Ok(_processor.GetInsights(OperatorName()));
+
+        [HttpPost("commands")]
+        public async Task<ActionResult<CommandOutcome>> IssueCommand([FromBody] CommandRequest request)
+        {
+            var outcome = await _commands.IssueAsync(request, OperatorName());
+            return ToResult(outcome);
+        }
+
+        [HttpPost("commands/undo")]
+        public async Task<ActionResult<CommandOutcome>> UndoLastCommand()
+        {
+            var outcome = await _commands.UndoAsync(OperatorName());
+            return ToResult(outcome);
+        }
+
+        [HttpGet("commands/history")]
+        public ActionResult<List<OverrideCommand>> GetCommandHistory([FromQuery] int take = 50) =>
+            Ok(_processor.GetCommandHistory(take));
+
+        [HttpPost("telemetry/batch")]
+        [Authorize(Policy = DeviceKeyDefaults.IngestPolicy)]
+        public async Task<ActionResult<BatchIngestResult>> IngestBatch([FromBody] List<TelemetrySubmission> submissions)
+        {
+            if (submissions.Count == 0)
+            {
+                return BadRequest("The batch is empty.");
+            }
+
+            if (submissions.Count > MaxBatchSize)
+            {
+                return BadRequest($"A batch cannot contain more than {MaxBatchSize} readings.");
+            }
+
+            var batch = new BatchIngestResult();
+
+            for (var i = 0; i < submissions.Count; i++)
+            {
+                var item = new BatchItemResult { Index = i };
+
+                if (!TelemetryPacketFactory.TryCreate(submissions[i], out var packet, out var error) || packet is null)
+                {
+                    item.IsValid = false;
+                    item.Message = error;
+                }
+                else
+                {
+                    var result = await _telemetry.ReceiveAsync(packet);
+                    item.IsValid = result.IsValid;
+                    item.Message = result.Message;
+                }
+
+                if (item.IsValid)
+                {
+                    batch.Accepted++;
+                }
+                else
+                {
+                    batch.Rejected++;
+                }
+
+                batch.Results.Add(item);
+            }
+
+            return Ok(batch);
+        }
+
+        private ActionResult ToResult(CommandOutcome outcome) => outcome.Kind switch
+        {
+            CommandOutcomeKind.Success => Ok(outcome),
+            CommandOutcomeKind.NothingToUndo => Ok(outcome),
+            CommandOutcomeKind.NotFound => NotFound(outcome),
+            CommandOutcomeKind.Conflict => Conflict(outcome),
+            _ => BadRequest(outcome)
+        };
+
+        private string OperatorName() =>
+            User.FindFirstValue("email")
+            ?? User.FindFirstValue("user_id")
+            ?? User.FindFirstValue("sub")
+            ?? User.FindFirstValue(ClaimTypes.NameIdentifier)
+            ?? "operator";
     }
-
-    [HttpGet("telemetry/next")]
-    public IActionResult GetNextTelemetry()
-    {
-        lock (store.SyncRoot)
-            return store.TelemetryQueue.TryDequeue(out var packet) ? Ok(packet) : NoContent();
-    }
-
-    [HttpGet("alerts")]
-    public IActionResult GetAlerts() { lock (store.SyncRoot) return Ok(store.AlertHistory.OrderByDescending(a => a.Timestamp).ToList()); }
-
-    [HttpGet("timeline")]
-    public IActionResult GetTimeline()
-    {
-        lock (store.SyncRoot) return Ok(store.SensorTimeline.SelectMany(pair => pair.Value).OrderBy(x => x.Timestamp).ToList());
-    }
-
-    [HttpPost("commands")]
-    public IActionResult IssueCommand([FromBody] ManualCommandRecord command)
-    {
-        if (string.IsNullOrWhiteSpace(command.NodeId) || string.IsNullOrWhiteSpace(command.Command)) return BadRequest("NodeId and Command are required.");
-        try { return Ok(store.IssueCommand(command)); }
-        catch (KeyNotFoundException ex) { return BadRequest(ex.Message); }
-    }
-
-    [HttpPost("commands/undo")]
-    public IActionResult UndoCommand()
-    {
-        var undone = store.UndoCommand();
-        return undone is null ? NoContent() : Ok(new { Message = "Last command marked as undone. Send the inverse device command if physical rollback is required.", Command = undone });
-    }
-
-    [HttpPost("search")]
-    public IActionResult Search([FromBody] SearchRequest request)
-    {
-        if (string.IsNullOrWhiteSpace(request.Query)) return BadRequest("Query is required.");
-        return Ok(store.Search(request.Query.Trim()));
-    }
-
-    [HttpGet("insights")]
-    public IActionResult GetInsights() => Ok(store.GetInsights());
 }
-
-public sealed class SearchRequest { public string Query { get; set; } = ""; }
