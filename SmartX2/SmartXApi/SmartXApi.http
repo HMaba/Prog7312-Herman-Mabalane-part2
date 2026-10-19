@@ -1,0 +1,6 @@
+@SmartXApi_HostAddress = http://localhost:5234
+
+GET {{SmartXApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="SmartXApi/SmartXApi.csproj" Id="fed828b1-e260-402c-9a43-c45c32005d8a" />
+  <Project Path="SmartxWPF/SmartxWPF.csproj" Id="b0d679d9-78e9-47cf-8f2d-0a8a6c7fc564" />
+</Solution>
