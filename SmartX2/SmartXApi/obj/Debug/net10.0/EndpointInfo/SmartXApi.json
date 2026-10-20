@@ -944,6 +944,18 @@
         }
       }
     },
+    "/api/diagnostics": {
+      "get": {
+        "tags": [
+          "Diagnostics"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/sensors": {
       "get": {
         "tags": [
@@ -2279,6 +2291,9 @@
     },
     {
       "name": "Devices"
+    },
+    {
+      "name": "Diagnostics"
     },
     {
       "name": "Sensors"

@@ -128,6 +128,8 @@
                                                 <DataGridTextColumn Header="Node" Binding="{Binding NodeId}" Width="*"/>
                                                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
                                                 <DataGridTextColumn Header="Alert state" Binding="{Binding AlertState}" Width="110"/>
+                                                <DataGridTextColumn Header="Packets" Binding="{Binding PacketsReceived}" Width="75"/>
+                                                <DataGridTextColumn Header="Latest readings" Binding="{Binding Readings}" Width="2*"/>
                                             </DataGrid.Columns>
                                         </DataGrid>
                                     </StackPanel>

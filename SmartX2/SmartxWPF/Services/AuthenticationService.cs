@@ -4,7 +4,6 @@ using System.Text.Json;
 
 namespace SmartxWPF.Services;
 
-/// <summary>Signs in with Firebase Authentication and applies the resulting ID token to SmartX API requests.</summary>
 public sealed class AuthenticationService(ApiClient apiClient)
 {
     // Firebase Web API keys identify a project; they are not service-account credentials.

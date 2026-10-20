@@ -553,6 +553,16 @@
     ]
   },
   {
+    "ContainingType": "SmartXApi.Controllers.DiagnosticsController",
+    "Method": "Get",
+    "RelativePath": "api/diagnostics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartXApi.Controllers.SensorsController",
     "Method": "GetAll",
     "RelativePath": "api/sensors",

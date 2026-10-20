@@ -201,7 +201,6 @@ namespace SmartXApi.Services
 
             await _processor.ReloadAllAsync();
 
-            // New devices only receive their ids inside the store, so look the touched ones up by identifier.
             var touchedIdentifiers = newDevices.Concat(updatedDevices)
                 .Select(d => d.DeviceIdentifier)
                 .ToHashSet(StringComparer.OrdinalIgnoreCase);

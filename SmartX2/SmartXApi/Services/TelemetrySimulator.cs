@@ -4,7 +4,22 @@ using System.Globalization;
 
 namespace SmartXApi.Services
 {
-    
+    /// <summary>
+    /// Generates live readings for every sensor so the dashboard has moving data without real hardware.
+    /// Readings go through the normal pipeline (validation, store, live stream, thresholds, alerts).
+    ///
+    /// Settings (appsettings.json):
+    ///   Simulator:Enabled          true/false (default true)
+    ///   Simulator:IntervalSeconds  seconds between readings (default 3)
+    ///
+    /// Behaviour:
+    ///   - Soil moisture slowly dries out (warning below 30, critical below 20) and rises while an
+    ///     irrigation valve or pump is switched on, so an override command visibly changes the data.
+    ///   - Temperature and humidity follow a smooth cycle, with an occasional heat spike.
+    ///   - Power draw is steady with noise, rises while an actuator on the same device is on,
+    ///     and occasionally spikes.
+    ///   - Actuators are never flipped by the simulator; it only reports their current state.
+    /// </summary>
     public sealed class TelemetrySimulator : BackgroundService
     {
         private readonly IServiceScopeFactory _scopeFactory;
@@ -17,6 +32,15 @@ namespace SmartXApi.Services
         private readonly Dictionary<int, int> _spikeTicks = new();
         private readonly HashSet<int> _publishedStates = new();
         private readonly DateTime _startedAt = DateTime.UtcNow;
+
+        // Read by the diagnostics endpoint.
+        public bool Enabled { get; private set; }
+        public int IntervalSeconds { get; private set; }
+        public long Ticks { get; private set; }
+        public long ReadingsAccepted { get; private set; }
+        public long ReadingsRejected { get; private set; }
+        public DateTime? LastTickUtc { get; private set; }
+        public string? LastProblem { get; private set; }
 
         public TelemetrySimulator(
             IServiceScopeFactory scopeFactory,
@@ -32,13 +56,15 @@ namespace SmartXApi.Services
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            if (!_configuration.GetValue("Simulator:Enabled", true))
+            Enabled = _configuration.GetValue("Simulator:Enabled", true);
+            if (!Enabled)
             {
                 _logger.LogInformation("Telemetry simulator is disabled (Simulator:Enabled = false).");
                 return;
             }
 
             var seconds = Math.Max(1, _configuration.GetValue("Simulator:IntervalSeconds", 3));
+            IntervalSeconds = seconds;
             _logger.LogInformation("Telemetry simulator running: one reading per sensor every {Seconds}s.", seconds);
 
             try
@@ -93,13 +119,32 @@ namespace SmartXApi.Services
                         continue;
                     }
 
-                    var result = await telemetry.ReceiveAsync(packet);
-                    if (!result.IsValid)
+                    // One bad reading must not stop the rest of the tick.
+                    try
                     {
-                        _logger.LogDebug("Simulated reading for sensor {SensorId} rejected: {Message}", sensor.Id, result.Message);
+                        var result = await telemetry.ReceiveAsync(packet);
+                        if (result.IsValid)
+                        {
+                            ReadingsAccepted++;
+                        }
+                        else
+                        {
+                            ReadingsRejected++;
+                            LastProblem = $"Sensor {sensor.Id}: {result.Message}";
+                            _logger.LogWarning("Simulated reading for sensor {SensorId} was rejected: {Message}", sensor.Id, result.Message);
+                        }
+                    }
+                    catch (Exception ex) when (ex is not OperationCanceledException)
+                    {
+                        ReadingsRejected++;
+                        LastProblem = $"Sensor {sensor.Id}: {ex.Message}";
+                        _logger.LogWarning(ex, "Simulated reading for sensor {SensorId} failed.", sensor.Id);
                     }
                 }
             }
+
+            Ticks++;
+            LastTickUtc = DateTime.UtcNow;
         }
 
         private TelemetryPacketBase? BuildPacket(

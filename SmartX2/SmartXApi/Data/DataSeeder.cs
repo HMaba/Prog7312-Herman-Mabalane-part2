@@ -3,10 +3,6 @@ using System.Text;
 
 namespace SmartXApi.Data
 {
-    /// <summary>
-    /// Starting data, written directly in code. Runs once when the in-memory store is created.
-    /// Edit the lists below to change what the application starts with.
-    /// </summary>
     public static class DataSeeder
     {
         public static void Seed(IDataStore store)
@@ -16,7 +12,6 @@ namespace SmartXApi.Data
                 return;
             }
 
-            // ---------------------------------------------------------- Devices + sensors
             var soilNode = store.AddDevice(new Device
             {
                 DeviceIdentifier = "ESP32-001",
@@ -52,7 +47,6 @@ namespace SmartXApi.Data
             var meter = powerNode.Sensors.First(s => s.Name == "Power Meter");
             var valve = powerNode.Sensors.First(s => s.Name == "Irrigation Valve");
 
-            // ------------------------------------------------------------- Telemetry history
             var now = DateTime.UtcNow;
             float[] moistureSeries = { 41.2f, 40.5f, 39.8f, 38.9f, 37.6f, 36.4f };
             float[] temperatureSeries = { 22.4f, 22.9f, 23.5f, 24.1f, 24.6f, 25.0f };
@@ -61,7 +55,6 @@ namespace SmartXApi.Data
 
             for (var i = 0; i < moistureSeries.Length; i++)
             {
-                // Oldest first; the last entry is five minutes ago.
                 var timestamp = now.AddMinutes(-(moistureSeries.Length - i) * 5);
 
                 AddReading(store, new TelemetryPacket<float> { DeviceId = soilNode.Id, SensorId = moisture.Id, Timestamp = timestamp, Value = moistureSeries[i] });
@@ -70,7 +63,6 @@ namespace SmartXApi.Data
                 AddReading(store, new TelemetryPacket<bool> { DeviceId = powerNode.Id, SensorId = valve.Id, Timestamp = timestamp, Value = valveSeries[i] });
             }
 
-            // ------------------------------------------------------------------ Attachments
             var config = Encoding.UTF8.GetBytes(
                 "# ESP32-001 node configuration\n" +
                 "sample_interval_seconds=30\n" +

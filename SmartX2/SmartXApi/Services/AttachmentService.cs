@@ -12,6 +12,9 @@ namespace SmartXApi.Services
         Task<bool> DeleteAsync(int id);
     }
 
+    /// <summary>
+    /// Attachments (metadata and file bytes) live in memory only. Nothing is written to disk.
+    /// </summary>
     public class AttachmentService : IAttachmentService
     {
         private readonly IDataStore _store;

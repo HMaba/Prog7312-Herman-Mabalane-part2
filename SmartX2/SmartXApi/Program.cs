@@ -24,8 +24,6 @@ builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 
-// All devices, sensors, telemetry and attachments live in memory (seeded from Data/DataSeeder.cs).
-// Data is lost when the application stops. There is no database.
 builder.Services.AddSingleton<IDataStore, InMemoryDataStore>();
 
 var issuer = $"https://securetoken.google.com/{firebaseProjectId}";
@@ -60,7 +58,9 @@ builder.Services.AddSingleton<StreamDataStructures>();
 builder.Services.AddSingleton<PredictiveActionEngine>();
 builder.Services.AddSingleton<ITelemetryStreamProcessor, TelemetryStreamProcessor>();
 builder.Services.AddHostedService<StreamWorker>();
-builder.Services.AddHostedService<TelemetrySimulator>(); // live demo data; set Simulator:Enabled=false to turn off
+// Live demo data; set Simulator:Enabled=false to turn off. Registered as a singleton so /api/diagnostics can report on it.
+builder.Services.AddSingleton<TelemetrySimulator>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<TelemetrySimulator>());
 
 builder.Services.AddScoped<IDeviceService, DeviceService>();
 builder.Services.AddScoped<ISensorService, SensorService>();

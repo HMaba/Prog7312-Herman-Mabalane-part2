@@ -2,11 +2,7 @@ using SmartXApi.Models;
 
 namespace SmartXApi.Data
 {
-    /// <summary>
-    /// Storage abstraction used by every service. The only implementation is
-    /// <see cref="InMemoryDataStore"/>; there is no database behind it.
-    /// All reads return copies, so callers can never mutate stored state by accident.
-    /// </summary>
+
     public interface IDataStore
     {
         // Devices
@@ -65,7 +61,6 @@ namespace SmartXApi.Data
             DataSeeder.Seed(this);
         }
 
-        // ---------------------------------------------------------------- Devices
 
         public List<Device> GetDevices(bool includeChildren = true)
         {
@@ -146,7 +141,6 @@ namespace SmartXApi.Data
                     return false;
                 }
 
-                // Cascade: sensors, attachments (and their content) and telemetry go with the device.
                 _sensors.RemoveAll(s => s.DeviceId == id);
 
                 foreach (var attachment in _attachments.Where(a => a.DeviceId == id).ToList())
@@ -161,7 +155,7 @@ namespace SmartXApi.Data
             }
         }
 
-        // ---------------------------------------------------------------- Sensors
+       
 
         public List<Sensor> GetSensors(int? deviceId = null)
         {
@@ -230,7 +224,6 @@ namespace SmartXApi.Data
             }
         }
 
-        // ------------------------------------------------------------ Attachments
 
         public List<Attachment> GetAttachments(int deviceId)
         {
@@ -289,8 +282,7 @@ namespace SmartXApi.Data
             }
         }
 
-        // -------------------------------------------------------------- Telemetry
-
+        
         public TelemetryRecord AddTelemetry(TelemetryRecord record)
         {
             lock (_gate)
@@ -304,7 +296,6 @@ namespace SmartXApi.Data
         {
             lock (_gate)
             {
-                // _telemetry is append-ordered; sort by timestamp (then id) newest first, like the old query.
                 return _telemetry
                     .Where(t => t.DeviceId == deviceId && (!sensorId.HasValue || t.SensorId == sensorId.Value))
                     .OrderByDescending(t => t.Timestamp)
@@ -328,8 +319,6 @@ namespace SmartXApi.Data
                 return latest is null ? null : CloneTelemetry(latest);
             }
         }
-
-        // ----------------------------------------------------------------- Import
 
         public void ApplyImport(IEnumerable<Device> newDevices, IEnumerable<Device> updatedDevices)
         {
@@ -362,7 +351,6 @@ namespace SmartXApi.Data
             }
         }
 
-        // ---------------------------------------------- Internals (call under _gate)
 
         private Device AddDeviceCore(Device source)
         {

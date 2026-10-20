@@ -30,6 +30,11 @@ public sealed class DeviceDto
     public string AlertState { get; set; } = "";
     public long PacketsReceived { get; set; }
     public List<SensorDto> Sensors { get; set; } = new();
+
+    /// <summary>One-line summary of the latest sensor values, shown on the overview grid.</summary>
+    public string Readings => string.Join("   ", Sensors
+        .Where(s => s.Value is not null)
+        .Select(s => $"{s.Name}: {s.Value} {s.Unit}".Trim()));
 }
 public sealed class SensorDto
 {
@@ -38,7 +43,8 @@ public sealed class SensorDto
     public string Category { get; set; } = "";
     public string Unit { get; set; } = "";
     public object? Value { get; set; }
-    public DateTime Timestamp { get; set; }
+    // The API sends null until a sensor has reported at least once; a plain DateTime would fail the whole dashboard load.
+    public DateTime? Timestamp { get; set; }
     public bool IsOutOfRange { get; set; }
 }
 public sealed class AlertDto
