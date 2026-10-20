@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using SmartXApi.Models;
 using SmartXApi.Services;
 
@@ -32,6 +32,18 @@ namespace SmartXApi.Controllers
             return attachment is null
                 ? BadRequest($"Device {deviceId} does not exist.")
                 : CreatedAtAction(nameof(GetByDevice), new { deviceId }, attachment);
+        }
+
+        [HttpGet("{id:int}/download")]
+        public async Task<IActionResult> Download(int id)
+        {
+            var found = await _attachmentService.GetContentAsync(id);
+            if (found is null)
+            {
+                return NotFound();
+            }
+
+            return File(found.Value.Content, "application/octet-stream", found.Value.Info.FileName);
         }
 
         [HttpDelete("{id:int}")]

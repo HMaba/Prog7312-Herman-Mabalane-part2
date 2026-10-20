@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SmartXApi.Data;
 using SmartXApi.Security;
@@ -12,13 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 var firebaseProjectId = builder.Configuration["Firebase:ProjectId"];
 if (string.IsNullOrWhiteSpace(firebaseProjectId))
 {
-    throw new InvalidOperationException("Firebase:ProjectId is not configured. Set it with: dotnet user-secrets set \"Firebase:smar-auth\" \"<your-firebase-project-id>\"");
-}
-
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-if (string.IsNullOrWhiteSpace(connectionString))
-{
-    throw new InvalidOperationException("ConnectionStrings:DefaultConnection is not configured.");
+    throw new InvalidOperationException("Firebase:ProjectId is not configured. Set it with: dotnet user-secrets set \"Firebase:ProjectId\" \"<your-firebase-project-id>\"");
 }
 
 builder.Services.AddControllers().AddJsonOptions(options =>
@@ -31,10 +24,9 @@ builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddDbContext<SmartXDbContext>(options =>
-{
-    options.UseSqlServer(connectionString);
-});
+// All devices, sensors, telemetry and attachments live in memory (seeded from Data/DataSeeder.cs).
+// Data is lost when the application stops. There is no database.
+builder.Services.AddSingleton<IDataStore, InMemoryDataStore>();
 
 var issuer = $"https://securetoken.google.com/{firebaseProjectId}";
 
@@ -68,6 +60,7 @@ builder.Services.AddSingleton<StreamDataStructures>();
 builder.Services.AddSingleton<PredictiveActionEngine>();
 builder.Services.AddSingleton<ITelemetryStreamProcessor, TelemetryStreamProcessor>();
 builder.Services.AddHostedService<StreamWorker>();
+builder.Services.AddHostedService<TelemetrySimulator>(); // live demo data; set Simulator:Enabled=false to turn off
 
 builder.Services.AddScoped<IDeviceService, DeviceService>();
 builder.Services.AddScoped<ISensorService, SensorService>();
@@ -80,13 +73,6 @@ builder.Services.AddScoped<ICommandStreamService, CommandStreamService>();
 builder.Services.AddScoped<IDeviceImportService, DeviceImportService>();
 
 var app = builder.Build();
-
-using (var scope = app.Services.CreateScope())
-{
-    var context = scope.ServiceProvider.GetRequiredService<SmartXDbContext>();
-    context.Database.EnsureCreated();
-    DataSeeder.Seed(context);
-}
 
 if (app.Environment.IsDevelopment())
 {

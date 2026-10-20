@@ -1,82 +1,54 @@
-﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Data;
 using SmartXApi.Models;
 using Attachment = SmartXApi.Models.Attachment;
 
 namespace SmartXApi.Services
 {
-
     public interface IAttachmentService
     {
         Task<List<Attachment>> GetByDeviceIdAsync(int deviceId);
         Task<Attachment?> SaveAsync(int deviceId, AttachmentType type, string fileName, Stream content);
+        Task<(Attachment Info, byte[] Content)?> GetContentAsync(int id);
         Task<bool> DeleteAsync(int id);
-        string StorageRoot { get; }
     }
+
     public class AttachmentService : IAttachmentService
     {
-        private readonly SmartXDbContext _context;
-        public string StorageRoot { get; }
+        private readonly IDataStore _store;
 
-        public AttachmentService(SmartXDbContext context, IWebHostEnvironment env)
-        {
-            _context = context;
-            StorageRoot = Path.Combine(env.ContentRootPath, "AttachmentStorage");
-            Directory.CreateDirectory(StorageRoot);
-        }
+        public AttachmentService(IDataStore store) => _store = store;
 
-        public async Task<List<Attachment>> GetByDeviceIdAsync(int deviceId)
-        {
-            return await _context.Attachments.AsNoTracking().Where(a => a.DeviceId == deviceId).ToListAsync();
-        }
+        public Task<List<Attachment>> GetByDeviceIdAsync(int deviceId) =>
+            Task.FromResult(_store.GetAttachments(deviceId));
 
         public async Task<Attachment?> SaveAsync(int deviceId, AttachmentType type, string fileName, Stream content)
         {
-            var deviceExists = await _context.Devices.AnyAsync(d => d.Id == deviceId);
-            if (!deviceExists)
+            if (!_store.DeviceExists(deviceId))
             {
                 return null;
             }
 
-            var safeName = $"{deviceId}_{DateTime.UtcNow.Ticks}_{Path.GetFileName(fileName)}";
-            var fullPath = Path.Combine(StorageRoot, safeName);
+            using var buffer = new MemoryStream();
+            await content.CopyToAsync(buffer);
 
-            await using (var fileStream = File.Create(fullPath))
-            {
-                await content.CopyToAsync(fileStream);
-            }
-
-            var attachment = new Attachment
+            return _store.AddAttachment(new Attachment
             {
                 DeviceId = deviceId,
-                FileName = fileName,
+                FileName = Path.GetFileName(fileName),
                 FileType = type,
-                FilePath = fullPath,
-                FileSizeBytes = new FileInfo(fullPath).Length,
                 UploadedAt = DateTime.UtcNow
-            };
-
-            _context.Attachments.Add(attachment);
-            await _context.SaveChangesAsync();
-            return attachment;
+            }, buffer.ToArray());
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public Task<(Attachment Info, byte[] Content)?> GetContentAsync(int id)
         {
-            var attachment = await _context.Attachments.FirstOrDefaultAsync(a => a.Id == id);
-            if (attachment is null)
-            {
-                return false;
-            }
+            var info = _store.GetAttachment(id);
+            var bytes = _store.GetAttachmentContent(id);
 
-            if (File.Exists(attachment.FilePath))
-            {
-                File.Delete(attachment.FilePath);
-            }
-
-            _context.Attachments.Remove(attachment);
-            await _context.SaveChangesAsync();
-            return true;
+            (Attachment Info, byte[] Content)? result = info is null || bytes is null ? null : (info, bytes);
+            return Task.FromResult(result);
         }
+
+        public Task<bool> DeleteAsync(int id) => Task.FromResult(_store.RemoveAttachment(id));
     }
 }

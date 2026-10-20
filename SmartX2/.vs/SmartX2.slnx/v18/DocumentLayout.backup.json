@@ -3,12 +3,116 @@
   "WorkspaceRootPath": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\data\\smartxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\data\\smartxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\telemetryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\telemetryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\security\\devicekeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\security\\devicekeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\streamdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\streamdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\predictiveactionengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\predictiveactionengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deviceimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deviceimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deploymentvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deploymentvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetrysimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetrysimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetrystreamprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetrystreamprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetryvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetryvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\thresholdcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\thresholdcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\services\\fileimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\services\\fileimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\ApiServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\ApiServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\smartxwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\smartxwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,52 +123,12 @@
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\security\\devicekeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\security\\devicekeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\smartxapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\smartxapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\smartxapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\smartxapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\attachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\smartxwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\smartxwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\commandstreamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deviceimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deviceimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,24 +151,8 @@
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\deploymentnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetrypacketfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetrypacketfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetrystreamprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetrystreamprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\predictiveactionengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\predictiveactionengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,40 +175,12 @@
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\streammodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\telemetrypacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\models\\telemetryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\models\\telemetryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\deploymentvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\deploymentvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\sensorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\streamdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\streamdatastructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\streamworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\streamworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetryprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetryprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\telemetryvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\telemetryvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxapi\\services\\thresholdcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FED828B1-E260-402C-9A43-C45C32005D8A}|SmartXApi\\SmartXApi.csproj|solutionrelative:smartxapi\\services\\thresholdcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\views\\landingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -171,8 +191,72 @@
       "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|c:\\users\\hmaba\\onedrive\\documents\\github\\prog7312-herman-mabalane-part2\\smartx2\\smartxwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0D679D9-78E9-47CF-8F2D-0A8A6C7FC564}|SmartxWPF\\SmartxWPF.csproj|solutionrelative:smartxwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\TelemetryServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\TelemetryServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SessionHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\SessionHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\SensorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FleetSimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\FleetSimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FireBaseAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\FireBaseAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\DeviceServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceImpotService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\DeviceImpotService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\AttachmentServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Services\\AttachmentServices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\ViewModelBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Helpers\\ViewModelBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\RelayCommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Helpers\\RelayCommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\FlexibleStringConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Helpers\\FlexibleStringConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\AppSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Helpers\\AppSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Engine\\StreamEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamDataStructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Engine\\StreamDataStructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\PredictiveEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Engine\\PredictiveEngine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Controls\\LineControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartxWPF\\Controls\\LineControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\SmartXDBContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartXApi\\Data\\SmartXDBContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -182,75 +266,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "SmartXApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "SmartXApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-20T13:22:26.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Program.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Program.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Program.cs",
-              "RelativeToolTip": "SmartXApi\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAswGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T19:30:11.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\appsettings.json",
-              "RelativeDocumentMoniker": "SmartXApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\appsettings.json",
-              "RelativeToolTip": "SmartXApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-20T02:35:57.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AttachmentService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\AttachmentService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\AttachmentService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\AttachmentService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\AttachmentService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:50:38.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SmartXDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\SmartXDBContext.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Data\\SmartXDBContext.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\SmartXDBContext.cs",
-              "RelativeToolTip": "SmartXApi\\Data\\SmartXDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T17:00:35.936Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -260,14 +280,563 @@
               "RelativeDocumentMoniker": "SmartXApi\\Security\\DeviceKeyAuthenticationHandler.cs",
               "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Security\\DeviceKeyAuthenticationHandler.cs",
               "RelativeToolTip": "SmartXApi\\Security\\DeviceKeyAuthenticationHandler.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-19T18:49:24.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Attachment.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Attachment.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Models\\Attachment.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Attachment.cs",
+              "RelativeToolTip": "SmartXApi\\Models\\Attachment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T17:01:19.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Device.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Models\\Device.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Device.cs",
+              "RelativeToolTip": "SmartXApi\\Models\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:50:01.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DeploymentNode.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\DeploymentNode.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Models\\DeploymentNode.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\DeploymentNode.cs",
+              "RelativeToolTip": "SmartXApi\\Models\\DeploymentNode.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T17:01:54.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelemetryRecord.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryRecord.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Models\\TelemetryRecord.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryRecord.cs",
+              "RelativeToolTip": "SmartXApi\\Models\\TelemetryRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:51:22.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelemetryPacket.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryPacket.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Models\\TelemetryPacket.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryPacket.cs",
+              "RelativeToolTip": "SmartXApi\\Models\\TelemetryPacket.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwEUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:50:57.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StreamDataStructures.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\StreamDataStructures.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\StreamDataStructures.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\StreamDataStructures.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\StreamDataStructures.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:52:37.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SensorService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\SensorService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\SensorService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\SensorService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\SensorService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:52:20.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PredictiveActionEngine.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\PredictiveActionEngine.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\PredictiveActionEngine.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\PredictiveActionEngine.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\PredictiveActionEngine.cs",
+              "ViewState": "AgIAAEkCAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:52:02.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeviceService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\DeviceService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:51:46.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeviceImportService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceImportService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeviceImportService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceImportService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\DeviceImportService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:51:26.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeploymentValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeploymentValidationService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeploymentValidationService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeploymentValidationService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\DeploymentValidationService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:51:10.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CommandStreamService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\CommandStreamService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\CommandStreamService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\CommandStreamService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\CommandStreamService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:50:55.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AttachmentService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\AttachmentService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\AttachmentService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\AttachmentService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\AttachmentService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:50:38.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TelemetryService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\TelemetryService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:52:05.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TelemetrySimulator.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetrySimulator.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetrySimulator.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetrySimulator.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\TelemetrySimulator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T20:48:01.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TelemetryStreamProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryStreamProcessor.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryStreamProcessor.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryStreamProcessor.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\TelemetryStreamProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:52:58.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TelemetryValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryValidationService.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryValidationService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryValidationService.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\TelemetryValidationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:57:29.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThresholdCatalog.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\ThresholdCatalog.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Services\\ThresholdCatalog.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\ThresholdCatalog.cs",
+              "RelativeToolTip": "SmartXApi\\Services\\ThresholdCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T18:58:21.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SmartxWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwJcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T03:17:00.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\ApiClient.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T20:07:12.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Dockerfile",
+              "RelativeDocumentMoniker": "SmartXApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Dockerfile",
+              "RelativeToolTip": "SmartXApi\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-20T20:46:16.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SmartXApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SmartXApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-20T13:22:26.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "FireBaseAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FireBaseAuthService.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\FireBaseAuthService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FireBaseAuthService.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\FireBaseAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "FleetSimulator.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FleetSimulator.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\FleetSimulator.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FleetSimulator.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\FleetSimulator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "SensorService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SensorService.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\SensorService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SensorService.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\SensorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FileImportService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FileImportService.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\FileImportService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\FileImportService.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\FileImportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T20:07:51.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SessionHub.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SessionHub.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\SessionHub.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\SessionHub.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\SessionHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApiServices.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\ApiServices.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\ApiServices.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\ApiServices.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\ApiServices.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TelemetryService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\TelemetryService.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\TelemetryService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\TelemetryService.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\TelemetryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T20:07:46.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DeviceServices.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceServices.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\DeviceServices.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceServices.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\DeviceServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "TelemetryServices.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\TelemetryServices.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\TelemetryServices.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\TelemetryServices.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\TelemetryServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:15.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DeviceImpotService.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceImpotService.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\DeviceImpotService.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\DeviceImpotService.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\DeviceImpotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AttachmentServices.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\AttachmentServices.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Services\\AttachmentServices.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Services\\AttachmentServices.cs",
+              "RelativeToolTip": "SmartxWPF\\Services\\AttachmentServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Helpers\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\ViewModelBase.cs",
+              "RelativeToolTip": "SmartxWPF\\Helpers\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RelayCommands.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\RelayCommands.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Helpers\\RelayCommands.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\RelayCommands.cs",
+              "RelativeToolTip": "SmartxWPF\\Helpers\\RelayCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "FlexibleStringConverter.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\FlexibleStringConverter.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Helpers\\FlexibleStringConverter.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\FlexibleStringConverter.cs",
+              "RelativeToolTip": "SmartxWPF\\Helpers\\FlexibleStringConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\AppSettings.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Helpers\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Helpers\\AppSettings.cs",
+              "RelativeToolTip": "SmartxWPF\\Helpers\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "StreamEngine.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamEngine.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Engine\\StreamEngine.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamEngine.cs",
+              "RelativeToolTip": "SmartxWPF\\Engine\\StreamEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "StreamDataStructures.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamDataStructures.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Engine\\StreamDataStructures.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\StreamDataStructures.cs",
+              "RelativeToolTip": "SmartxWPF\\Engine\\StreamDataStructures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "PredictiveEngine.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\PredictiveEngine.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Engine\\PredictiveEngine.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Engine\\PredictiveEngine.cs",
+              "RelativeToolTip": "SmartxWPF\\Engine\\PredictiveEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:14.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "LineControl.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Controls\\LineControl.cs",
+              "RelativeDocumentMoniker": "SmartxWPF\\Controls\\LineControl.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Controls\\LineControl.cs",
+              "RelativeToolTip": "SmartxWPF\\Controls\\LineControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:29:12.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Program.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Program.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Program.cs",
+              "RelativeToolTip": "SmartXApi\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAswGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:30:11.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartXApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\appsettings.json",
+              "RelativeToolTip": "SmartXApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-20T02:35:57.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "SmartXDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\SmartXDBContext.cs",
+              "RelativeDocumentMoniker": "SmartXApi\\Data\\SmartXDBContext.cs",
+              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\SmartXDBContext.cs",
+              "RelativeToolTip": "SmartXApi\\Data\\SmartXDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T17:00:35.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\AuthController.cs",
@@ -275,24 +844,11 @@
               "RelativeToolTip": "SmartXApi\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:43:58.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T10:43:58.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Attachment.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Attachment.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Models\\Attachment.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Attachment.cs",
-              "RelativeToolTip": "SmartXApi\\Models\\Attachment.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T17:01:19.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "SmartXApi.http",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\SmartXApi.http",
               "RelativeDocumentMoniker": "SmartXApi\\SmartXApi.http",
@@ -304,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "SmartXApi.csproj",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\SmartXApi.csproj",
               "RelativeDocumentMoniker": "SmartXApi\\SmartXApi.csproj",
@@ -316,31 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Dockerfile",
-              "RelativeDocumentMoniker": "SmartXApi\\Dockerfile",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Dockerfile",
-              "RelativeToolTip": "SmartXApi\\Dockerfile",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-20T02:41:29.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Device.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Device.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Models\\Device.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Device.cs",
-              "RelativeToolTip": "SmartXApi\\Models\\Device.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:50:01.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "SmartxWPF.csproj",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\SmartxWPF.csproj",
               "RelativeDocumentMoniker": "SmartxWPF\\SmartxWPF.csproj",
@@ -352,43 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeviceService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeviceService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\DeviceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:51:46.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DeviceImportService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceImportService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeviceImportService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeviceImportService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\DeviceImportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:51:26.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CommandStreamService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\CommandStreamService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\CommandStreamService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\CommandStreamService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\CommandStreamService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:50:55.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
               "Title": "SensorController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\SensorController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\SensorController.cs",
@@ -400,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 33,
               "Title": "DeviceController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\DeviceController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\DeviceController.cs",
@@ -412,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 34,
               "Title": "CommandStreamController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\CommandStreamController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\CommandStreamController.cs",
@@ -424,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 35,
               "Title": "AttachmentsController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\AttachmentsController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\AttachmentsController.cs",
@@ -436,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 36,
               "Title": "Sensor.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\Sensor.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Models\\Sensor.cs",
@@ -448,19 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DeploymentNode.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\DeploymentNode.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Models\\DeploymentNode.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\DeploymentNode.cs",
-              "RelativeToolTip": "SmartXApi\\Models\\DeploymentNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T17:01:54.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 37,
               "Title": "TelemetryPacketFactory.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryPacketFactory.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryPacketFactory.cs",
@@ -472,43 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TelemetryService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\TelemetryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:52:05.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TelemetryStreamProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryStreamProcessor.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryStreamProcessor.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryStreamProcessor.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\TelemetryStreamProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:52:58.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "PredictiveActionEngine.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\PredictiveActionEngine.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\PredictiveActionEngine.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\PredictiveActionEngine.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\PredictiveActionEngine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:52:02.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Data\\DataSeeder.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Data\\DataSeeder.cs",
@@ -520,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "TelemetryController.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Controllers\\TelemetryController.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Controllers\\TelemetryController.cs",
@@ -532,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "PowerReading.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\PowerReading.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Models\\PowerReading.cs",
@@ -544,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 41,
               "Title": "SensorCategory.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\SensorCategory.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Models\\SensorCategory.cs",
@@ -556,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "StreamModels.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\StreamModels.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Models\\StreamModels.cs",
@@ -568,67 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "TelemetryPacket.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryPacket.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Models\\TelemetryPacket.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryPacket.cs",
-              "RelativeToolTip": "SmartXApi\\Models\\TelemetryPacket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:50:57.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "TelemetryRecord.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryRecord.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Models\\TelemetryRecord.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Models\\TelemetryRecord.cs",
-              "RelativeToolTip": "SmartXApi\\Models\\TelemetryRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:51:22.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "DeploymentValidationService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeploymentValidationService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\DeploymentValidationService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\DeploymentValidationService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\DeploymentValidationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:51:10.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SensorService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\SensorService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\SensorService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\SensorService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\SensorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:52:20.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "StreamDataStructures.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\StreamDataStructures.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\StreamDataStructures.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\StreamDataStructures.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\StreamDataStructures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:52:37.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "StreamWorker.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\StreamWorker.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Services\\StreamWorker.cs",
@@ -640,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "TelemetryProcessingService.cs",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryProcessingService.cs",
               "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryProcessingService.cs",
@@ -652,31 +1040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "TelemetryValidationService.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryValidationService.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\TelemetryValidationService.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\TelemetryValidationService.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\TelemetryValidationService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:57:29.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ThresholdCatalog.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\ThresholdCatalog.cs",
-              "RelativeDocumentMoniker": "SmartXApi\\Services\\ThresholdCatalog.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartXApi\\Services\\ThresholdCatalog.cs",
-              "RelativeToolTip": "SmartXApi\\Services\\ThresholdCatalog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T18:58:21.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "LandingView.xaml",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\Views\\LandingView.xaml",
               "RelativeDocumentMoniker": "SmartxWPF\\Views\\LandingView.xaml",
@@ -687,7 +1051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SmartxWPF\\MainWindow.xaml",
@@ -695,18 +1059,6 @@
               "RelativeToolTip": "SmartxWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-10-19T03:17:03.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SmartxWPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\hmaba\\OneDrive\\Documents\\GitHub\\Prog7312-Herman-Mabalane-part2\\SmartX2\\SmartxWPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "SmartxWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T03:17:00.565Z"
             }
           ]
         }

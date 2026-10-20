@@ -1,4 +1,3 @@
-﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Data;
 using SmartXApi.Models;
 using System.Text;
@@ -19,13 +18,13 @@ namespace SmartXApi.Services
         private static readonly Regex MacPattern = new("^([0-9A-F]{2}:){5}[0-9A-F]{2}$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
         private static readonly Regex IdentifierPattern = new("^[A-Za-z0-9_.\\-]{1,50}$", RegexOptions.Compiled);
 
-        private readonly SmartXDbContext _context;
+        private readonly IDataStore _store;
         private readonly ITelemetryStreamProcessor _processor;
         private readonly ILogger<DeviceImportService> _logger;
 
-        public DeviceImportService(SmartXDbContext context, ITelemetryStreamProcessor processor, ILogger<DeviceImportService> logger)
+        public DeviceImportService(IDataStore store, ITelemetryStreamProcessor processor, ILogger<DeviceImportService> logger)
         {
-            _context = context;
+            _store = store;
             _processor = processor;
             _logger = logger;
         }
@@ -96,7 +95,7 @@ namespace SmartXApi.Services
                 return result;
             }
 
-            var existing = await _context.Devices.Include(d => d.Sensors).ToListAsync();
+            var existing = _store.GetDevices();
             var byMac = new Dictionary<string, Device>(StringComparer.OrdinalIgnoreCase);
             var byIdentifier = new Dictionary<string, Device>(StringComparer.OrdinalIgnoreCase);
 
@@ -111,7 +110,8 @@ namespace SmartXApi.Services
                 byIdentifier.TryAdd(device.DeviceIdentifier, device);
             }
 
-            var touched = new List<Device>();
+            var newDevices = new List<Device>();
+            var updatedDevices = new List<Device>();
             var created = 0;
             var updated = 0;
 
@@ -146,7 +146,11 @@ namespace SmartXApi.Services
                     }
 
                     updated++;
-                    touched.Add(current);
+                    if (!updatedDevices.Contains(current))
+                    {
+                        updatedDevices.Add(current);
+                    }
+
                     continue;
                 }
 
@@ -169,27 +173,26 @@ namespace SmartXApi.Services
                     Sensors = item.Sensors.Select(t => t.ToSensor()).ToList()
                 };
 
-                _context.Devices.Add(device);
+                newDevices.Add(device);
                 byMac[item.Mac] = device;
                 byIdentifier[item.Identifier] = device;
                 created++;
-                touched.Add(device);
             }
 
-            if (touched.Count == 0)
+            if (newDevices.Count == 0 && updatedDevices.Count == 0)
             {
                 return result;
             }
 
             try
             {
-                await _context.SaveChangesAsync();
+                _store.ApplyImport(newDevices, updatedDevices);
             }
-            catch (DbUpdateException ex)
+            catch (Exception ex)
             {
-                _logger.LogError(ex, "Device import could not be saved.");
+                _logger.LogError(ex, "Device import could not be applied.");
                 result.Skipped += created + updated;
-                result.Errors.Add(new ImportLineError { Line = 0, Message = "The database rejected the import; no devices were changed." });
+                result.Errors.Add(new ImportLineError { Line = 0, Message = "The import could not be applied; no devices were changed." });
                 return result;
             }
 
@@ -197,7 +200,19 @@ namespace SmartXApi.Services
             result.Updated = updated;
 
             await _processor.ReloadAllAsync();
-            result.Devices = _processor.GetDevices(touched.Select(d => d.Id).Distinct());
+
+            // New devices only receive their ids inside the store, so look the touched ones up by identifier.
+            var touchedIdentifiers = newDevices.Concat(updatedDevices)
+                .Select(d => d.DeviceIdentifier)
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+            var touchedIds = _store.GetDevices(includeChildren: false)
+                .Where(d => touchedIdentifiers.Contains(d.DeviceIdentifier))
+                .Select(d => d.Id)
+                .Distinct()
+                .ToList();
+
+            result.Devices = _processor.GetDevices(touchedIds);
             return result;
         }
 

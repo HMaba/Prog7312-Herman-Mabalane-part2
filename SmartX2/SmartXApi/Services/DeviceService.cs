@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 using SmartXApi.Data;
 using SmartXApi.Models;
 
@@ -19,30 +18,23 @@ namespace SmartXApi.Services
     {
         private static readonly Regex MacPattern = new("^([0-9A-F]{2}:){5}[0-9A-F]{2}$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-        private readonly SmartXDbContext _context;
+        private readonly IDataStore _store;
         private readonly ITelemetryStreamProcessor _stream;
 
-        public DeviceService(SmartXDbContext context, ITelemetryStreamProcessor stream)
+        public DeviceService(IDataStore store, ITelemetryStreamProcessor stream)
         {
-            _context = context;
+            _store = store;
             _stream = stream;
         }
 
-        public async Task<List<Device>> GetAllAsync() =>
-            await _context.Devices
-                .Include(d => d.Sensors)
-                .Include(d => d.Attachments)
-                .AsNoTracking()
-                .ToListAsync();
+        public Task<List<Device>> GetAllAsync() => Task.FromResult(_store.GetDevices());
 
-        public async Task<Device?> GetByIdAsync(int id) =>
-            await _context.Devices
-                .Include(d => d.Sensors)
-                .Include(d => d.Attachments)
-                .AsNoTracking()
-                .FirstOrDefaultAsync(d => d.Id == id);
+        public Task<Device?> GetByIdAsync(int id) => Task.FromResult(_store.GetDevice(id));
 
-        public async Task<string?> ValidateAsync(Device device, int? exceptId = null)
+        public Task<string?> ValidateAsync(Device device, int? exceptId = null) =>
+            Task.FromResult(Validate(device, exceptId));
+
+        private string? Validate(Device device, int? exceptId)
         {
             if (string.IsNullOrWhiteSpace(device.DeviceIdentifier) || device.DeviceIdentifier.Length > 50)
             {
@@ -56,21 +48,14 @@ namespace SmartXApi.Services
             }
 
             var identifier = device.DeviceIdentifier.Trim();
-            var identifierTaken = await _context.Devices.AnyAsync(d =>
-                d.DeviceIdentifier == identifier && (!exceptId.HasValue || d.Id != exceptId.Value));
-            if (identifierTaken)
+            if (_store.IdentifierTaken(identifier, exceptId))
             {
                 return $"A device with identifier '{identifier}' already exists.";
             }
 
             if (mac.Length > 0)
             {
-                var candidates = await _context.Devices
-                    .AsNoTracking()
-                    .Where(d => !exceptId.HasValue || d.Id != exceptId.Value)
-                    .Select(d => d.MacAddress)
-                    .ToListAsync();
-
+                var candidates = _store.GetMacAddresses(exceptId);
                 if (candidates.Any(m => TelemetryStreamProcessor.NormalizeMac(m) == mac))
                 {
                     return $"A device with MAC address '{mac}' already exists.";
@@ -84,44 +69,41 @@ namespace SmartXApi.Services
         {
             device.RegisteredAt = DateTime.UtcNow;
             device.MacAddress = TelemetryStreamProcessor.NormalizeMac(device.MacAddress);
-            _context.Devices.Add(device);
-            await _context.SaveChangesAsync();
-            await _stream.ReloadDeviceAsync(device.Id);
-            return device;
+            var created = _store.AddDevice(device);
+            await _stream.ReloadDeviceAsync(created.Id);
+            return created;
         }
 
         public async Task<bool> UpdateAsync(int id, Device device)
         {
-            var existing = await _context.Devices.FirstOrDefaultAsync(d => d.Id == id);
-            if (existing is null)
+            var updated = _store.UpdateDevice(id, existing =>
+            {
+                existing.DeviceIdentifier = device.DeviceIdentifier;
+                existing.MacAddress = TelemetryStreamProcessor.NormalizeMac(device.MacAddress);
+                existing.Location = device.Location;
+                existing.Room = device.Room;
+                existing.NodeId = device.NodeId;
+                existing.IsOnline = device.IsOnline;
+            });
+
+            if (!updated)
             {
                 return false;
             }
 
-            existing.DeviceIdentifier = device.DeviceIdentifier;
-            existing.MacAddress = TelemetryStreamProcessor.NormalizeMac(device.MacAddress);
-            existing.Location = device.Location;
-            existing.Room = device.Room;
-            existing.NodeId = device.NodeId;
-            existing.IsOnline = device.IsOnline;
-
-            await _context.SaveChangesAsync();
             await _stream.ReloadDeviceAsync(id);
             return true;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public Task<bool> DeleteAsync(int id)
         {
-            var existing = await _context.Devices.FirstOrDefaultAsync(d => d.Id == id);
-            if (existing is null)
+            if (!_store.RemoveDevice(id))
             {
-                return false;
+                return Task.FromResult(false);
             }
 
-            _context.Devices.Remove(existing);
-            await _context.SaveChangesAsync();
             _stream.RemoveDevice(id);
-            return true;
+            return Task.FromResult(true);
         }
     }
 }

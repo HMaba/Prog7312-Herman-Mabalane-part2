@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SmartXApi\\SmartXApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SmartxWPF\\SmartxWPF.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "New Profile (1)",
+    "Projects": [
+      {
+        "Path": "SmartXApi\\SmartXApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SmartxWPF\\SmartxWPF.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

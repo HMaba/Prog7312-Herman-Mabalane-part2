@@ -1,4 +1,3 @@
-﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Data;
 using SmartXApi.Models;
 
@@ -12,20 +11,26 @@ namespace SmartXApi.Services
 
     public class TelemetryValidationService : ITelemetryValidationService
     {
-        private readonly SmartXDbContext _context;
+        private readonly IDataStore _store;
 
-        public TelemetryValidationService(SmartXDbContext context) => _context = context;
+        public TelemetryValidationService(IDataStore store) => _store = store;
 
-        public async Task<TelemetryResult> ValidateAsync(TelemetryPacketBase packet)
+        public Task<TelemetryResult> ValidateAsync(TelemetryPacketBase packet) => Task.FromResult(Validate(packet));
+
+        private TelemetryResult Validate(TelemetryPacketBase packet)
         {
-            var device = await _context.Devices.AsNoTracking().FirstOrDefaultAsync(d => d.Id == packet.DeviceId);
+            var device = _store.GetDevice(packet.DeviceId, includeChildren: false);
             if (device is null)
             {
                 return new TelemetryResult { IsValid = false, Message = $"Device {packet.DeviceId} does not exist." };
             }
 
-            var sensor = await _context.Sensors.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Id == packet.SensorId && s.DeviceId == packet.DeviceId);
+            var sensor = _store.GetSensor(packet.SensorId);
+            if (sensor is not null && sensor.DeviceId != packet.DeviceId)
+            {
+                sensor = null;
+            }
+
             if (sensor is null)
             {
                 return new TelemetryResult { IsValid = false, Message = $"Sensor {packet.SensorId} is not registered to device {packet.DeviceId}." };

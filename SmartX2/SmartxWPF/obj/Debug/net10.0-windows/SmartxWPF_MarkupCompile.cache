@@ -1,5 +1,5 @@
 ﻿SmartxWPF
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 C:\Users\hmaba\OneDrive\Documents\GitHub\Prog7312-Herman-Mabalane-part2\SmartX2\SmartxWPF\App.xaml
 2626064031
 
-7-820490229
+132141757432
 353-761716487
 MainWindow.xaml;Views\LandingView.xaml;
 
-True
+False
 

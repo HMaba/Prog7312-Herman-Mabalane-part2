@@ -1,4 +1,3 @@
-﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Data;
 using SmartXApi.Models;
 using System.Diagnostics.CodeAnalysis;
@@ -31,18 +30,18 @@ namespace SmartXApi.Services
     {
         private readonly StreamDataStructures _data;
         private readonly PredictiveActionEngine _engine;
-        private readonly IServiceScopeFactory _scopeFactory;
+        private readonly IDataStore _store;
         private readonly ILogger<TelemetryStreamProcessor> _logger;
 
         public TelemetryStreamProcessor(
             StreamDataStructures data,
             PredictiveActionEngine engine,
-            IServiceScopeFactory scopeFactory,
+            IDataStore store,
             ILogger<TelemetryStreamProcessor> logger)
         {
             _data = data;
             _engine = engine;
-            _scopeFactory = scopeFactory;
+            _store = store;
             _logger = logger;
         }
 
@@ -155,11 +154,9 @@ namespace SmartXApi.Services
             }
         }
 
-        public async Task ReloadAllAsync()
+        public Task ReloadAllAsync()
         {
-            using var scope = _scopeFactory.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<SmartXDbContext>();
-            var devices = await context.Devices.AsNoTracking().Include(d => d.Sensors).ToListAsync();
+            var devices = _store.GetDevices();
 
             lock (_data.SyncRoot)
             {
@@ -175,21 +172,22 @@ namespace SmartXApi.Services
                     RemoveDevice(staleId);
                 }
             }
+
+            return Task.CompletedTask;
         }
 
-        public async Task ReloadDeviceAsync(int deviceId)
+        public Task ReloadDeviceAsync(int deviceId)
         {
-            using var scope = _scopeFactory.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<SmartXDbContext>();
-            var device = await context.Devices.AsNoTracking().Include(d => d.Sensors).FirstOrDefaultAsync(d => d.Id == deviceId);
+            var device = _store.GetDevice(deviceId);
 
             if (device is null)
             {
                 RemoveDevice(deviceId);
-                return;
+                return Task.CompletedTask;
             }
 
             UpsertDevice(device);
+            return Task.CompletedTask;
         }
 
         public void RemoveDevice(int deviceId)

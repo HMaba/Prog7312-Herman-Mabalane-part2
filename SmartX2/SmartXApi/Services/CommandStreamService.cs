@@ -1,4 +1,4 @@
-﻿using SmartXApi.Models;
+using SmartXApi.Models;
 using SmartXApi.Data;
 
 namespace SmartXApi.Services
@@ -12,16 +12,16 @@ namespace SmartXApi.Services
 
     public class CommandStreamService : ICommandStreamService
     {
-        private readonly SmartXDbContext _context;
+        private readonly IDataStore _store;
         private readonly ITelemetryStreamProcessor _processor;
         private readonly ILogger<CommandStreamService> _logger;
 
         public CommandStreamService(
-            SmartXDbContext context,
+            IDataStore store,
             ITelemetryStreamProcessor processor,
             ILogger<CommandStreamService> logger)
         {
-            _context = context;
+            _store = store;
             _processor = processor;
             _logger = logger;
         }
@@ -47,11 +47,11 @@ namespace SmartXApi.Services
             return results;
         }
 
-        private async Task PersistAsync(CommandOutcome outcome)
+        private Task PersistAsync(CommandOutcome outcome)
         {
             if (!outcome.Success || outcome.Command is null)
             {
-                return;
+                return Task.CompletedTask;
             }
 
             try
@@ -64,14 +64,15 @@ namespace SmartXApi.Services
                     Value = outcome.Command.NewState
                 };
 
-                _context.TelemetryRecords.Add(TelemetryRecord.FromPacket(packet));
-                await _context.SaveChangesAsync();
+                _store.AddTelemetry(TelemetryRecord.FromPacket(packet));
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Command {CommandId} was applied but its telemetry record could not be saved.", outcome.Command.Id);
                 outcome.Message += " The state change was applied but could not be written to the telemetry history.";
             }
+
+            return Task.CompletedTask;
         }
     }
 }
