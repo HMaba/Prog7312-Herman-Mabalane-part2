@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 var firebaseProjectId = builder.Configuration["Firebase:ProjectId"];
 if (string.IsNullOrWhiteSpace(firebaseProjectId))
 {
-    throw new InvalidOperationException("Firebase:ProjectId is not configured. Set it with: dotnet user-secrets set \"Firebase:ProjectId\" \"<your-firebase-project-id>\"");
+    throw new InvalidOperationException("Firebase:ProjectId is not configured. Set it with: dotnet user-secrets set \"Firebase:smar-auth\" \"<your-firebase-project-id>\"");
 }
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
