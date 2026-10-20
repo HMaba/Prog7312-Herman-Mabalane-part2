@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Data;
 using SmartXApi.Models;
+using Attachment = SmartXApi.Models.Attachment;
 
 namespace SmartXApi.Services
 {

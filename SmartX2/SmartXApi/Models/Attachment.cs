@@ -1,6 +1,4 @@
-﻿using SmartXApi.Models;
-
-namespace SmartXApi.Models
+﻿namespace SmartXApi.Models
 {
     public class Attachment
     {

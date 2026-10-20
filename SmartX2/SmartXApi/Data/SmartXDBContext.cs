@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SmartXApi.Models;
-using System.Net.Mail;
 using System.Reflection.Emit;
 
 namespace SmartXApi.Data
@@ -15,7 +14,7 @@ namespace SmartXApi.Data
         public DbSet<Device> Devices => Set<Device>();
         public DbSet<Sensor> Sensors => Set<Sensor>();
         public DbSet<TelemetryRecord> TelemetryRecords => Set<TelemetryRecord>();
-        public DbSet<System.Net.Mail.Attachment> Attachments => Set<System.Net.Mail.Attachment>();
+        public DbSet<Attachment> Attachments => Set<Attachment>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
